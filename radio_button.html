@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icon.png">
+    <!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"> -->
+    <link rel="stylesheet" href="css/jqm-demos.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page" class="jqm-demos" data-quicklinks="true">
+        <div data-role="header" class="jqm-header">
+            <h2><img src="img/jquery-logo.png" alt="jQuery Mobile"></h2>
+            <a href="#mypanel"
+                class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+            <a href="#"
+                class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
+        </div>
+        <div role="main" class="ui-content jqm-content">
+            <form method="post" action="demoform.asp">
+                <h1>Radio buttons</h1>
+                <p>Jurnsan yang melakukan kegiatan pembuatan program aplikasi maupun software lain dalam sebuah rekayasa
+                    merupakan jurnsan</p>
+                <ol type="a">
+                    <li> TRR</li>
+                    <li> TEI</li>
+                    <b style="color:blue">
+                        <li> RPL</li>
+                    </b>
+                    <li> TRI</li>
+                    <li> TAV</li>
+                </ol>
+                
+                <h2>Vertikal Group</h2>
+                <fieldset data-role="controlgroup">
+                    <legend>Vertikal Group:</legend>
+                    <input type="radio" name="radio1" id="radio1a" value="TRR">
+                    <label for="radio1a">TRR</label>
+                    <input type='radio' name='radio1' id='radio1b' value='TBI'>
+                    <label for='radio1b'>TBI</label>
+                    <input type='radio' name='radio1' id='radio1c' value='RPL'>
+                    <label for='radio1c'>RPL</label>
+                    <input type='radio' name='radio1' id='radio1d' value='TRI'>
+                    <label for='radio1d'>TRI</label>
+                    <input type='radio' name='radio1' id='radio1e' value='AV'>
+                    <label for='radio1e'>AV</label>
+                </fieldset>
+                
+                <h2>Horizontal Group</h2>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Horizontal Group:</legend>
+                    <input type="radio" name="radio2" id="radio2a" value="TRR">
+                    <label for="radio2a">TRR</label>
+                    <input type='radio' name='radio2' id='radio2b' value='TBI'>
+                    <label for='radio2b'>TBI</label>
+                    <input type='radio' name='radio2' id='radio2c' value='RPL'>
+                    <label for='radio2c'>RPL</label>
+                    <input type='radio' name='radio2' id='radio2d' value='TRI'>
+                    <label for='radio2d'>TRI</label>
+                    <input type='radio' name='radio2' id='radio2e' value='AV'>
+                    <label for='radio2e'>AV</label>
+                </fieldset>
+                
+                <h2>Vertical mini sized</h2>
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <legend>Vertical mini sized:</legend>
+                    <input type="radio" name="radio3" id="radio3a" value="TRR">
+                    <label for="radio3a">TRR</label>
+                    <input type='radio' name='radio3' id='radio3b' value='TBI'>
+                    <label for='radio3b'>TBI</label>
+                    <input type='radio' name='radio3' id='radio3c' value='RPL'>
+                    <label for='radio3c'>RPL</label>
+                    <input type='radio' name='radio3' id='radio3d' value='TRI'>
+                    <label for='radio3d'>TRI</label>
+                    <input type='radio' name='radio3' id='radio3e' value='AV'>
+                    <label for='radio3e'>AV</label>
+                </fieldset>
+    
+                <h2>Icon Position</h2>
+                <fieldset data-role="controlgroup" data-iconpos="right">
+                    <legend>Icon Position:</legend>
+                    <input type="radio" name="radio4" id="radio4a" value="TRR">
+                    <label for="radio4a">TRR</label>
+                    <input type='radio' name='radio4' id='radio4b' value='TBI'>
+                    <label for='radio4b'>TBI</label>
+                    <input type='radio' name='radio4' id='radio4c' value='RPL'>
+                    <label for='radio4c'>RPL</label>
+                    <input type='radio' name='radio4' id='radio4d' value='TRI'>
+                    <label for='radio4d'>TRI</label>
+                    <input type='radio' name='radio4' id='radio4e' value='AV'>
+                    <label for='radio4e'>AV</label>
+                </fieldset>
+    
+                <h2>theme</h2>
+                <fieldset data-role="controlgroup" data-theme="b" data-type="horizontal">
+                    <legend>theme:</legend>
+                    <input type="radio" name="radio5" id="radio5a" value="TRR">
+                    <label for="radio5a">TRR</label>
+                    <input type='radio' name='radio5' id='radio5b' value='TBI'>
+                    <label for='radio5b'>TBI</label>
+                    <input type='radio' name='radio5' id='radio5c' value='RPL'>
+                    <label for='radio5c'>RPL</label>
+                    <input type='radio' name='radio5' id='radio5d' value='TRI'>
+                    <label for='radio5d'>TRI</label>
+                    <input type='radio' name='radio5' id='radio5e' value='AV'>
+                    <label for='radio5e'>AV</label>
+                </fieldset>
+    
+                <h2>disable</h2>
+                <fieldset data-role="controlgroup" >
+                    <legend>disable:</legend>
+                    <input type="radio" name="radio6" id="radio6a" value="TRR" disabled="disabled">
+                    <label for="radio6a">TRR</label>
+                    <input type='radio' name='radio6' id='radio6b' value='TBI' disabled="disabled">
+                    <label for='radio6b'>TBI</label>
+                    <input type='radio' name='radio6' id='radio6c' value='RPL' disabled="disabled">
+                    <label for='radio6c'>RPL</label>
+                    <input type='radio' name='radio6' id='radio6d' value='TRI' disabled="disabled">
+                    <label for='radio6d'>TRI</label>
+                    <input type='radio' name='radio6' id='radio6e' value='AV' disabled="disabled">
+                    <label for='radio6e'>AV</label>
+                </fieldset>
+                
+            </form>
+            <a href="#mypanel">Open panel</a>
+        </div>
+        <div data-role="panel" id="mypanel" data-position="left" data-display="push" data-theme="a">
+            <ul>
+
+                <li data-filtertext="form checkboxradio widget checkbox input checkboxes controlgroups"><a
+                        href="/select.html" data-ajax="false">select</a></li>
+                <li data-filtertext="form checkboxradio widget radio input radio buttons controlgroups"><a
+                        href="/radio_button.html" data-ajax="false">Radio buttons</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
+            <p class="text-center">Designed by jQuery Mobile</p>
+        </div>
+    </div>
+
+    <script>
+        $( function() {
+        $( "#mypanel" ).panel();
+        } );
+    </script>
+</body>
+</html>

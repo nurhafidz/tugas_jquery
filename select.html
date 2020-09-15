@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icon.png">
+    <!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"> -->
+    <link rel="stylesheet" href="css/jqm-demos.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page" class="jqm-demos" data-quicklinks="true">
+        <div data-role="header" class="jqm-header">
+            <h2><img src="img/jquery-logo.png" alt="jQuery Mobile"></h2>
+            <a href="#mypanel"
+                class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+            <a href="#"
+                class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
+        </div>
+        <div role="main" class="ui-content jqm-content">
+            <h1>Radio buttons</h1>
+            <p>Jurnsan yang melakukan kegiatan pembuatan program aplikasi maupun software lain dalam sebuah rekayasa
+                merupakan jurnsan</p>
+            <ol type="a">
+                <li> TRR</li>
+                <li> TEI</li>
+                <b style="color:blue">
+                    <li> RPL</li>
+                </b>
+                <li> TRI</li>
+                <li> TAV</li>
+            </ol>
+            <form>
+                <h2>Basic</h2>
+                <div class="ui-field-contain">
+                    <label for="select1">Basic:</label>
+                    <select name="select1" id="select1">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </div>
+                
+                <h2>Mini</h2>
+                <div class="ui-field-contain">
+                    <label for="select2">Mini:</label>
+                    <select name="select2" id="select2" data-mini="true">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </div>
+                
+                <h2>Icon Position</h2>
+                <div class="ui-field-contain">
+                    <label for="select3">Icon Position:</label>
+                    <select name="select3" id="select3" data-iconpos="left">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </div>
+                
+                <h2>Selected Option</h2>
+                <div class="ui-field-contain">
+                    <label for="select4">Selected Option:</label>
+                    <select name="select4" id="select4" >
+                        <option value="1">TKR</option>
+                        <option value="2" selected="selected">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </div>
+                
+                <h2>Disable Option</h2>
+                <div class="ui-field-contain">
+                    <label for="select5">Disable Option:</label>
+                    <select name="select5" id="select5" >
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3" disabled="disabled">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </div>
+                
+                <h2>Out Grup</h2>
+                <div class="ui-field-contain">
+                    <label for="select6">Out Grup:</label>
+                    <select name="select6" id="select6" >
+                        <option value="">Choose</option>
+                        <optgroup label="Group 1">
+                            <option value="1">TKR</option>
+                            <option value="2">TEI</option>
+                            <option value="3">RPL</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option value="4">TKI</option>
+                            <option value="5">TAV</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <h2>Vertical controlgroup</h2>
+                <fieldset data-role="controlgroup">
+                    <legend>Vertical controlgroup:</legend>
+                    <label for="select7">Select A</label>
+                    <select name="select7" id="select7">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                    <label for="select8">Select B</label>
+                    <select name="select8" id="select8">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </fieldset>
+
+                <h2>Vertical controlgroup mini</h2>
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <legend>Vertical controlgroup mini:</legend>
+                    <label for="select9">Select A</label>
+                    <select name="select9" id="select9">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                    <label for="select10">Select B</label>
+                    <select name="select10" id="select10">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </fieldset>
+
+                <h2>Horizontal controlgroup</h2>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Horizontal controlgroup:</legend>
+                    <label for="select11">Select A</label>
+                    <select name="select11" id="select11">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                    <label for="select12">Select B</label>
+                    <select name="select12" id="select12">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </fieldset>
+
+                <h2>Horizontal controlgroup mini</h2>
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend>Horizontal controlgroup mini:</legend>
+                    <label for="select11">Select A</label>
+                    <select name="select11" id="select11">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                    <label for="select12">Select B</label>
+                    <select name="select12" id="select12">
+                        <option value="1">TKR</option>
+                        <option value="2">TEI</option>
+                        <option value="3">RPL</option>
+                        <option value="4">TKI</option>
+                        <option value="5">TAV</option>
+                    </select>
+                </fieldset>
+            </form>
+
+            <a href="#mypanel">Open panel</a>
+        </div>
+        <div data-role="panel" id="mypanel" data-position="left" data-display="push" data-theme="a">
+            <ul>
+                
+            <li data-filtertext="form checkboxradio widget checkbox input checkboxes controlgroups"><a
+                    href="/select.html" data-ajax="false">select</a></li>
+            <li data-filtertext="form checkboxradio widget radio input radio buttons controlgroups"><a
+                    href="/radio_button.html" data-ajax="false">Radio buttons</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
+            <p class="text-center">Designed by jQuery Mobile</p>
+        </div>
+    </div>
+
+    <script>
+        $( function() {
+        $( "#mypanel" ).panel();
+        } );
+    </script>
+</body>
+</html>
